@@ -1,0 +1,20 @@
+description="Open-source browser project that aims to build a safer, faster and more stable way for Internet users."
+url="https://chromium.googlesource.com"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=chromium
+version=153.0.8010.47
+release=1
+
+run=(nss alsa-lib gtk3 freetype cairo gnome-keyring
+     xorg-libxdamage xorg-libxcomposite desktop-file-utils
+     hicolor-icon-theme xorg-libxcomposite dav1d
+     )
+
+source=(https://github.com/ungoogled-software/ungoogled-chromium-archlinux/releases/download/$version-$release/ungoogled-chromium-$version-$release-x86_64.pkg.tar.zst)
+
+build() {
+ cp -a usr/ $PKG/
+}
