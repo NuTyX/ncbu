@@ -6,7 +6,7 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Great-OS Team, Spiky"
 
 name=brave-browser
-version=1.92.139
+version=1.95.104
 
 run=(gtk3 nss xorg-libxtst xorg-libx11 freetype freefont-ttf
      desktop-file-utils shared-mime-info alsa-lib hicolor-icon-theme)
