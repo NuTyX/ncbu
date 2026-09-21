@@ -3,19 +3,22 @@ url="https://element.io/"
 
 license="Apache"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Sundev79,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Sundev79,Spiky"
 
-run=(gtk3 libnotify nss libsecret xorg-libxtst xdg-utils)
+run=(gtk3 libnotify nss libsecret xorg-libxtst xdg-utils
+     shared-mime-info desktop-file-utils hicolor-icon-theme)
 
 name=element-desktop
-version=1.11.101
+version=1.12.28
 
 source=(https://packages.riot.im/debian/pool/main/e/element-desktop/element-desktop_${version}_amd64.deb)
 
-build() {
-   tar -xvf data.tar.xz -C $PKG/
-
-install -Dm644 $PKG/opt/Element/LICENSES.chromium.html $PKG/usr/share/licenses/$name/LICENSES.chromium.html
-install -Dm644 $PKG/opt/Element/LICENSE.electron.txt $PKG/usr/share/licenses/$name/LICENSE.electron.txt
+package() {
+ install -Dm644 $PKG/opt/Element/LICENSES.chromium.html \
+ $PKG/usr/share/licenses/$name/LICENSES.chromium.html
+ install -Dm644 $PKG/opt/Element/LICENSE.electron.txt \
+ $PKG/usr/share/licenses/$name/LICENSE.electron.txt
+ rm $PKG/opt/Element/LICENSE*
+ chmod 4755 $PKG/opt/Element/chrome-sandbox
 }
