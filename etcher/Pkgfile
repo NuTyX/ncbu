@@ -7,20 +7,13 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Great-OS Team, Spiky"
 
 name=etcher
-version=2.1.6
+version=2.1.7
 
-run=(lbzip2)
+run=(lbzip2
+     shared-mime-info desktop-file-utils hicolor-icon-theme)
 
-source=(https://github.com/balena-io/etcher/releases/download/v$version/balena-etcher_${version}_amd64.deb
-        etcher)
+source=(https://github.com/balena-io/etcher/releases/download/v$version/balena-etcher_${version}_amd64.deb)
 
-build() {
-  mkdir -p output
-  tar -xvf data.tar.zst -C output
-}
-
-package() {
-  cp -r output/* $PKG
-  install -d $PKG/usr/bin
-  install -Dm755 etcher $PKG/usr/bin/etcher
+package(){
+ chmod 4755 $PKG/usr/lib/balena-etcher/chrome-sandbox
 }
