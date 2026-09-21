@@ -1,0 +1,14 @@
+description='An office suite that combines text, spreadsheet and presentation editors.'
+url='https://www.onlyoffice.com/'
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Great-OS, Spiky"
+
+name=onlyoffice
+version=9.4.0
+
+run=(gtk3 alsa-lib pulseaudio gstreamer gstreamer-plugins-base gstreamer-plugins-ugly
+     xorg-libxscrnsaver nss nspr dejavu-ttf ttf-liberation xorg-libxdamage xorg-libxcomposite
+     desktop-file-utils hicolor-icon-theme shared-mime-info)
+
+source=(https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v$version/onlyoffice-desktopeditors_amd64.deb)
