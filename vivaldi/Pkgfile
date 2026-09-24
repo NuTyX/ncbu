@@ -7,8 +7,10 @@ packager="tnut <tnut@nutyx.org"
 maintainer="Great-OS Team, Spiky"
 
 name=vivaldi
-version=8.2.4133.68
+version=8.2.4133.76
 release=1
+
+PKGMK_KEEP_SOURCES="no"
 
 run=(gtk3 nss xorg-libxtst xorg-libx11 freetype freefont-ttf desktop-file-utils
      shared-mime-info alsa-lib hicolor-icon-theme)
@@ -19,4 +21,5 @@ source=(https://downloads.vivaldi.com/stable/$name-stable_$version-1_amd64.deb
 
 package() {
   cp $SRC/libffmpeg.so $PKG/opt/vivaldi/libffmpeg.so
+  ln -sv ../../opt/$name/$name $PKG/usr/bin/$name
 }
