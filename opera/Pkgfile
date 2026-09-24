@@ -5,8 +5,7 @@ packager="tnut <tnut@nutyx.org>"
 maintainer="Spiky"
  
 name=opera
-version=136.0.6008.22
-release=1
+version=136.0.6008.52
 
 run=(gtk3 alsa-lib libnotify curl nss cups xorg-libxscrnsaver
      desktop-file-utils shared-mime-info hicolor-icon-theme
