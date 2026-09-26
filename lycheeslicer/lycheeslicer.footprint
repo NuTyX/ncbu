@@ -167,13 +167,17 @@ drwxr-xr-x	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@
 -rwxr-xr-x	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/bin/js-yaml.js
 drwxr-xr-x	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/dist/
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/dist/js-yaml.js
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/dist/js-yaml.js.map
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/dist/js-yaml.min.js
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/dist/js-yaml.min.js.map
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/dist/js-yaml.mjs
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/dist/js-yaml.mjs.map
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/index.js
 drwxr-xr-x	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/lib/
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/lib/common.js
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/lib/dumper.js
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/lib/exception.js
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/lib/index_vite_proxy.tmp.mjs
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/lib/loader.js
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/lib/schema.js
 drwxr-xr-x	root/root	opt/LycheeSlicer/resources/app.asar.unpacked/node_modules/@mango3d/addon_pixel_to_buffer/node_modules/js-yaml/lib/schema/
@@ -443,6 +447,23 @@ drwxr-xr-x	root/root	opt/LycheeSlicer/resources/node_modules/color/
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/LICENSE
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/README.md
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/index.js
+drwxr-xr-x	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/
+drwxr-xr-x	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-convert/
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-convert/CHANGELOG.md
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-convert/LICENSE
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-convert/README.md
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-convert/conversions.js
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-convert/index.js
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-convert/package.json
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-convert/route.js
+drwxr-xr-x	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-name/
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-name/.eslintrc.json
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-name/.npmignore
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-name/LICENSE
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-name/README.md
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-name/index.js
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-name/package.json
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/node_modules/color-name/test.js
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/color/package.json
 drwxr-xr-x	root/root	opt/LycheeSlicer/resources/node_modules/detect-libc/
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/detect-libc/LICENSE
@@ -450,6 +471,7 @@ drwxr-xr-x	root/root	opt/LycheeSlicer/resources/node_modules/detect-libc/
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/detect-libc/index.d.ts
 drwxr-xr-x	root/root	opt/LycheeSlicer/resources/node_modules/detect-libc/lib/
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/detect-libc/lib/detect-libc.js
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/detect-libc/lib/elf.js
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/detect-libc/lib/filesystem.js
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/detect-libc/lib/process.js
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/detect-libc/package.json
@@ -500,6 +522,11 @@ drwxr-xr-x	root/root	opt/LycheeSlicer/resources/node_modules/sharp/lib/
 drwxr-xr-x	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/
 drwxr-xr-x	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/.bin/
 lrwxrwxrwx	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/.bin/semver -> ../semver/bin/semver.js
+drwxr-xr-x	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/color/
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/color/LICENSE
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/color/README.md
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/color/index.js
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/color/package.json
 drwxr-xr-x	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/semver/
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/semver/LICENSE
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/semver/README.md
@@ -534,6 +561,7 @@ drwxr-xr-x	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/semver/functions/rsort.js
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/semver/functions/satisfies.js
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/semver/functions/sort.js
+-rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/semver/functions/truncate.js
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/semver/functions/valid.js
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/semver/index.js
 drwxr-xr-x	root/root	opt/LycheeSlicer/resources/node_modules/sharp/node_modules/semver/internal/
@@ -598,7 +626,6 @@ drwxr-xr-x	root/root	opt/LycheeSlicer/resources/node_modules/simple-swizzle/node
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/simple-swizzle/node_modules/is-arrayish/README.md
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/simple-swizzle/node_modules/is-arrayish/index.js
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/simple-swizzle/node_modules/is-arrayish/package.json
--rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/simple-swizzle/node_modules/is-arrayish/yarn-error.log
 -rw-r--r--	root/root	opt/LycheeSlicer/resources/node_modules/simple-swizzle/package.json
 -rw-r--r--	root/root	opt/LycheeSlicer/snapshot_blob.bin
 drwxr-xr-x	root/root	opt/LycheeSlicer/swiftshader/
