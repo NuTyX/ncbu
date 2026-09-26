@@ -9,9 +9,14 @@ drwxr-xr-x	root/root	usr/include/julia/
 -rw-r--r--	root/root	usr/include/julia/bitvector.h
 -rw-r--r--	root/root	usr/include/julia/dirpath.h
 -rw-r--r--	root/root	usr/include/julia/dtypes.h
+-rw-r--r--	root/root	usr/include/julia/gc-interface.h
+-rw-r--r--	root/root	usr/include/julia/gc-tls-common.h
+-rw-r--r--	root/root	usr/include/julia/gc-tls-stock.h
+-rw-r--r--	root/root	usr/include/julia/gc-wb-stock.h
 -rw-r--r--	root/root	usr/include/julia/hashing.h
 -rw-r--r--	root/root	usr/include/julia/htable.h
 -rw-r--r--	root/root	usr/include/julia/ios.h
+-rw-r--r--	root/root	usr/include/julia/jl_exported_data.inc
 -rw-r--r--	root/root	usr/include/julia/jloptions.h
 -rw-r--r--	root/root	usr/include/julia/julia.h
 -rw-r--r--	root/root	usr/include/julia/julia_assert.h
@@ -37,3 +42,4 @@ drwxr-xr-x	root/root	usr/include/julia/uv/
 -rw-r--r--	root/root	usr/include/julia/uv/threadpool.h
 -rw-r--r--	root/root	usr/include/julia/uv/unix.h
 -rw-r--r--	root/root	usr/include/julia/uv/version.h
+-rw-r--r--	root/root	usr/include/julia/work-stealing-queue.h
