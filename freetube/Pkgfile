@@ -1,18 +1,15 @@
 description="An Open Source YouTube app for privacy"
 url="https://github.com/FreeTubeApp/FreeTube/"
 
-packager="spiky <spiky@nutyx.org>"
-contributors="Sundev79,Tnut"
+packager="tnut <tnut@nutyx.org>"
+contributors="Sundev79,Spiky"
 
 makedepends=()
 run=(make-ca gtk3)
 
 name=freetube
-version=0.23.5
+version=0.25.3
 
 PKGMK_IGNORE_RUNTIMELIBS="yes"
-source=(https://github.com/FreeTubeApp/FreeTube/releases/download/v$version-beta/freetube_${version}_amd64.deb)
-
-build() {
-  tar -xf data.tar.xz -C $PKG
-}
+PKGMK_KEEP_SOURCES="no"
+source=(https://github.com/FreeTubeApp/FreeTube/releases/download/v$version-beta/freetube_${version}_beta_amd64.deb)

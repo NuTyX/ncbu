@@ -73,6 +73,7 @@ drwxr-xr-x	root/root	opt/FreeTube/locales/
 drwxr-xr-x	root/root	opt/FreeTube/resources/
 -rw-r--r--	root/root	opt/FreeTube/resources/app-update.yml
 -rw-r--r--	root/root	opt/FreeTube/resources/app.asar
+-rw-r--r--	root/root	opt/FreeTube/resources/apparmor-profile
 -rw-r--r--	root/root	opt/FreeTube/resources/package-type
 -rw-r--r--	root/root	opt/FreeTube/snapshot_blob.bin
 -rw-r--r--	root/root	opt/FreeTube/v8_context_snapshot.bin
