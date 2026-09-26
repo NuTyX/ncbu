@@ -13,3 +13,8 @@ version=2.23.0
 release=1
 
 source=(https://github.com/IsmaelMartinez/${name}-for-linux/releases/download/v$version/${name}-for-linux_${version}_amd64.deb)
+PKGMK_KEEP_SOURCES="no"
+
+package() {
+  chmod 4755 $PKG/opt/teams-for-linux/chrome-sandbox
+}
