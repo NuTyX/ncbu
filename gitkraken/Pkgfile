@@ -9,8 +9,8 @@ run=(gtk-update-icon-cache shared-mime-info
      hicolor-icon-theme desktop-file-utils)
 
 name=gitkraken
-version=10.6.0
-release=2
+version=12.5.0
+release=1
 
 PKGMK_IGNORE_RUNTIMELIBS="yes"
 

@@ -88,6 +88,7 @@ lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-c
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-apply -> git
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-archimport
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-archive -> git
+lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-backfill -> git
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-bisect -> git
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-blame -> git
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-branch -> git
@@ -124,6 +125,7 @@ lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-c
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-diff -> git
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-diff-files -> git
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-diff-index -> git
+lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-diff-pairs -> git
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-diff-tree -> git
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-difftool -> git
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-difftool--helper
@@ -144,6 +146,7 @@ lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-c
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-grep -> git
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-hash-object -> git
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-help -> git
+lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-history -> git
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-hook -> git
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-http-backend
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-http-fetch
@@ -154,6 +157,7 @@ lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-c
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-init-db -> git
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-instaweb
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-interpret-trailers -> git
+lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-last-modified -> git
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-lfs
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-log -> git
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-ls-files -> git
@@ -206,6 +210,7 @@ lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-c
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-repack -> git
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-replace -> git
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-replay -> git
+lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-repo -> git
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-request-pull
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-rerere -> git
 lrwxrwxrwx	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/git-reset -> git
@@ -355,6 +360,9 @@ drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-c
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/mergetools/xxdiff
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/libexec/git-core/scalar
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/
+drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/bash-completion/
+drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/bash-completion/completions/
+-rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/bash-completion/completions/git
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/git-core/
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/git-core/templates/
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/git-core/templates/description
@@ -401,6 +409,9 @@ drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/locale/
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/locale/fr/
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/locale/fr/LC_MESSAGES/git.mo
+drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/locale/ga/
+drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/locale/ga/LC_MESSAGES/
+-rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/locale/ga/LC_MESSAGES/git.mo
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/locale/id/
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/locale/id/LC_MESSAGES/
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/locale/id/LC_MESSAGES/git.mo
@@ -469,6 +480,8 @@ drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/perl5/G
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/share/perl5/Git/SVN/Utils.pm
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/git/ssl/
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/git/ssl/cacert.pem
+drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/gkcli/
+-rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/gkcli/gk
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axosoft/
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axosoft/node-spawn-server/
@@ -478,11 +491,8 @@ drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axo
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axosoft/nodegit/
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axosoft/nodegit/build/
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axosoft/nodegit/build/Release/
--rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axosoft/nodegit/build/Release/nodegit-ubuntu-18-ssl-1.0.0.node
--rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axosoft/nodegit/build/Release/nodegit-ubuntu-18-ssl-1.1.0.node
--rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axosoft/nodegit/build/Release/nodegit-ubuntu-18-ssl-10.node
--rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axosoft/nodegit/build/Release/nodegit-ubuntu-18-ssl-static.node
--rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axosoft/nodegit/build/Release/nodegit-ubuntu-18.node
+-rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axosoft/nodegit/build/Release/nodegit-x64-ubuntu-20-ssl-static.node
+-rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axosoft/nodegit/build/Release/nodegit-x64-ubuntu-20.node
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axosoft/nodegit/build/Release/nodegit.node
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axosoft/rust-socket-bridge/
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@axosoft/rust-socket-bridge/target/
@@ -499,7 +509,6 @@ drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@vsc
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@vscode/windows-process-tree/build/
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@vscode/windows-process-tree/build/Release/
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@vscode/windows-process-tree/build/Release/windows_process_tree.node
--rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/@vscode/windows-process-tree/build/Release/windows_process_tree.pdb
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/find-git-repositories/
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/find-git-repositories/build/
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/find-git-repositories/build/Release/
@@ -512,6 +521,15 @@ drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/node
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/node-pty/build/
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/node-pty/build/Release/
 -rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/node-pty/build/Release/pty.node
+drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/node-pty/third_party/
+drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/node-pty/third_party/conpty/
+drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/node-pty/third_party/conpty/1.22.250204002/
+drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/node-pty/third_party/conpty/1.22.250204002/win10-arm64/
+-rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/node-pty/third_party/conpty/1.22.250204002/win10-arm64/OpenConsole.exe
+-rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/node-pty/third_party/conpty/1.22.250204002/win10-arm64/conpty.dll
+drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/node-pty/third_party/conpty/1.22.250204002/win10-x64/
+-rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/node-pty/third_party/conpty/1.22.250204002/win10-x64/OpenConsole.exe
+-rw-r--r--	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/node-pty/third_party/conpty/1.22.250204002/win10-x64/conpty.dll
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/nsfw/
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/nsfw/build/
 drwxr-xr-x	root/root	opt/gitkraken/resources/app.asar.unpacked/node_modules/nsfw/build/Release/
