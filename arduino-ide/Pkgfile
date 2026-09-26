@@ -10,8 +10,8 @@ run=(fuse2)
 set=(arduino)
 
 name=arduino-ide
-version=2.3.6
-release=4
+version=2.3.10
+release=1
 
 PKGMK_IGNORE_RUNTIMELIBS="yes"
 PKGMK_KEEP_SOURCES="no"
