@@ -4,10 +4,10 @@ url="https://vivaldi.com"
 license="Vivaldi Technologies"
 
 packager="tnut <tnut@nutyx.org"
-maintainer="Great-OS Team, Spiky"
+contributors="Great-OS Team, Spiky"
 
 name=vivaldi
-version=8.2.4133.76
+version=8.2.4133.80
 release=1
 
 PKGMK_KEEP_SOURCES="no"
