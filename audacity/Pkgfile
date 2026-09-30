@@ -1,0 +1,30 @@
+description="An easy-to-use, multi-track audio editor and recorder."
+url="https://www.audacityteam.org"
+
+packager="tnut <tnut@nutyx.org"
+contributors="Spiky"
+
+name=audacity
+version=4.0.1
+release=1
+makedepends=(sed)
+run=(gtk-update-icon-cache hicolor-icon-theme desktop-file-utils shared-mime-info)
+
+source=(https://github.com/audacity/audacity/releases/download/Audacity-$version/audacity-linux-$version-x86_64.AppImage)
+
+build() {
+ mkdir $PKG/usr
+ chmod 755 audacity-linux-$version-x86_64.AppImage
+ ./audacity-linux-$version-x86_64.AppImage install $PKG/usr
+ sed -i "s@$PKG/usr@/usr@" \
+ $PKG/usr/share/applications/org.audacityteam.Audacity4portable.desktop
+}
+package() {
+mv $PKG/usr/share/mime/packages \
+   $PKG/usr/share
+rm -rf $PKG/usr/share/mime
+rm $PKG/usr/share/applications/mimeinfo.cache
+mkdir $PKG/usr/share/mime
+mv $PKG/usr/share/packages \
+   $PKG/usr/share/mime
+}
