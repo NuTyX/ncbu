@@ -1,0 +1,35 @@
+description='Feature based parametric 3D CAD modeler'
+url="https://www.freecad.org"
+
+license="LGPL-2.0"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=freecad
+version=1.1.4
+
+run=(gtk-update-icon-cache hicolor-icon-theme desktop-file-utils shared-mime-info)
+
+source=(https://github.com/FreeCAD/FreeCAD/releases/download/$version/FreeCAD_${version}-Linux-x86_64-py311.AppImage)
+
+build() {
+
+chmod +x FreeCAD_${version}-Linux-x86_64-py311.AppImage
+
+./FreeCAD_${version}-Linux-x86_64-py311.AppImage --appimage-extract
+
+mkdir -p $PKG/usr/{share/icons/hicolor,bin}
+cp -a squashfs-root/usr/share/mime \
+ $PKG/usr/share
+cp -a squashfs-root/usr/share/applications \
+ $PKG/usr/share
+cp -a squashfs-root/usr/share/icons/hicolor/scalable \
+ $PKG/usr/share/icons/hicolor/
+
+cp FreeCAD_${version}-Linux-x86_64-py311.AppImage  \
+ $PKG/usr/bin/
+ln -sv FreeCAD_${version}-Linux-x86_64-py311.AppImage  \
+ $PKG/usr/bin/FreeCAD
+}
+
