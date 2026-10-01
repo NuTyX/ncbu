@@ -5,8 +5,7 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 name=chromium
-version=153.0.8010.47
-release=1
+version=153.0.8010.52
 
 run=(nss alsa-lib gtk3 freetype cairo gnome-keyring
      xorg-libxdamage xorg-libxcomposite desktop-file-utils
