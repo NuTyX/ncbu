@@ -1,0 +1,30 @@
+description='OpenShot Video Editor is an award-winning free and open-source video editor'
+url="https://www.openshot.org/"
+
+license="GPL-3.0"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=openshot
+version=4.0.1
+
+run=(gtk-update-icon-cache hicolor-icon-theme desktop-file-utils shared-mime-info)
+
+source=(https://github.com/OpenShot/openshot-qt/releases/download/v$version/OpenShot-v$version-x86_64.AppImage)
+
+build() {
+
+chmod +x OpenShot-v$version-x86_64.AppImage
+
+./OpenShot-v$version-x86_64.AppImage --appimage-extract
+
+mkdir -p $PKG/usr/bin
+cp -a squashfs-root/usr/share \
+ $PKG/usr
+cp OpenShot-v$version-x86_64.AppImage \
+ $PKG/usr/bin/
+ln -sv OpenShot-v$version-x86_64.AppImage \
+ $PKG/usr/bin/openshot-qt-launch
+}
+
