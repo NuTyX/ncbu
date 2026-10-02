@@ -20,5 +20,13 @@ package() {
   sed -i "/Exec=/i\StartupWMClass=Google-chrome" "$PKG"/usr/share/applications/google-chrome.desktop
 
   rm -r "$PKG"/etc/cron.daily/ "$PKG"/opt/google/chrome/cron/
-#  rm "$PKG"/opt/google/chrome/product_logo_*.png
+
+  for icon in product_logo_16.png product_logo_24.png product_logo_32.png \
+  product_logo_48.png product_logo_64.png product_logo_128.png product_logo_256.png
+  do
+     size="$(echo ${icon} | sed 's/[^0-9]//g')"
+     install -m644 -D $PKG/opt/google/chrome/$icon \
+     $PKG/usr/share/icons/hicolor/"${size}x${size}"/apps/google-chrome.png
+  done
+  rm $PKG/opt/google/chrome/product_logo_*.png
 }
