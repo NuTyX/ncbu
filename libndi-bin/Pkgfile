@@ -16,13 +16,3 @@ _release=1
 
 source=(https://github.com/Palakis/${_name}/releases/download/${_version}/libndi4_${version}-${_release}_amd64.deb)
 
-
- build() {
-
-	cd "${SRC}"
-	tar -xJf data.tar.xz -C "${PKG}"
-	rm "${PKG}"/usr/lib/libndi.so.4
-	chmod 755 $(find "${PKG}" -type d)
-
-}
-
