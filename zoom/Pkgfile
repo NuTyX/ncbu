@@ -1,0 +1,20 @@
+description='Zoom Workplace, Video and Web Conferencing services'
+url='https://zoom.us'
+
+license="Zoom Communications, Inc"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=zoom
+version=7.2.1.5760
+
+run=(desktop-file-utils shared-mime-info hicolor-icon-theme)
+
+PKGMK_KEEP_SOURCES="no"
+
+source=($url/client/latest/${name}_amd64.deb)
+
+package() {
+ chmod 4755 $PKG/opt/zoom/cef/chrome_sandbox
+}
