@@ -4,9 +4,18 @@ url="https://www.caniusevia.com/"
 packager="spiky <spiky@nutyx.org>"
 contributors="BlogofraisFR"
 
-makedepends=(make)
+makedepends=(desktop-file-utils shared-mime-info hicolor-icon-theme)
 
 name=via
 version=3.0.0
 
 source=(https://github.com/the-via/releases/releases/download/v$version/$name-$version-linux.deb)
+
+package() {
+   mkdir -p $PKG/usr/bin
+
+   ln -sv /opt/VIA/via-nativia \
+   $PKG/usr/bin/via-nativia
+
+   chmod 4755 $PKG/opt/VIA/chrome-sandbox
+}
