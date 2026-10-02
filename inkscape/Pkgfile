@@ -1,0 +1,35 @@
+description='Inkscape is a Free and open source vector graphics editor.'
+url="https://www.inkscape.org/"
+
+license="GPL-2"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=inkscape
+version=1.4.4
+
+run=(gtk-update-icon-cache hicolor-icon-theme desktop-file-utils shared-mime-info)
+
+source=(https://www.inkscape.org/gallery/item/59506/Inkscape-$version.AppImage)
+
+build() {
+
+chmod +x Inkscape-$version.AppImage
+
+./Inkscape-$version.AppImage --appimage-extract
+
+mkdir -p $PKG/usr/{share,bin}
+cp -a squashfs-root/usr/share/applications \
+ $PKG/usr/share
+rm $PKG/usr/share/applications/python3.8.desktop
+cp -a squashfs-root/usr/share/icons \
+ $PKG/usr/share
+cp -a squashfs-root/usr/share/metainfo \
+ $PKG/usr/share
+cp Inkscape-$version.AppImage \
+ $PKG/usr/bin/
+ln -sv Inkscape-$version.AppImage \
+ $PKG/usr/bin/inkscape
+}
+
