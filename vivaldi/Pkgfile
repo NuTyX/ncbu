@@ -8,7 +8,7 @@ contributors="Great-OS Team, Spiky"
 
 name=vivaldi
 version=8.2.4133.80
-release=1
+release=2
 
 PKGMK_KEEP_SOURCES="no"
 
@@ -16,10 +16,16 @@ run=(gtk3 nss xorg-libxtst xorg-libx11 freetype freefont-ttf desktop-file-utils
      shared-mime-info alsa-lib hicolor-icon-theme)
 
 
-source=(https://downloads.vivaldi.com/stable/$name-stable_$version-1_amd64.deb
-        libffmpeg.so)
+source=(https://downloads.vivaldi.com/stable/$name-stable_$version-1_amd64.deb)
 
 package() {
-  cp $SRC/libffmpeg.so $PKG/opt/vivaldi/libffmpeg.so
   ln -sv ../../opt/$name/$name $PKG/usr/bin/$name
+
+  for icon in product_logo_16.png product_logo_24.png product_logo_32.png \
+  product_logo_48.png product_logo_64.png product_logo_128.png product_logo_256.png
+  do
+     size="$(echo ${icon} | sed 's/[^0-9]//g')"
+     install -m644 -D $PKG/opt/vivaldi/$icon \
+     $PKG/usr/share/icons/hicolor/"${size}x${size}"/apps/vivaldi.png
+  done
 }
