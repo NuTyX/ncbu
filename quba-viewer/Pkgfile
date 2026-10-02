@@ -1,0 +1,37 @@
+description='Open source application to display structured (i.e., XML) and hybrid (Factur-X/ZUGFeRD PDF) electronic invoices.'
+url="https://quba-viewer.org/"
+
+license="Apache-2.0"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=quba-viewer
+version=1.5.1
+
+run=(gtk-update-icon-cache hicolor-icon-theme desktop-file-utils shared-mime-info)
+
+source=(https://quba-viewer.org/files/Quba-$version.AppImage)
+
+build() {
+
+chmod +x Quba-$version.AppImage
+
+./Quba-$version.AppImage --appimage-extract
+
+mkdir -p $PKG/usr/{share/applications,bin}
+
+sed "s@AppRun@quba@" squashfs-root/quba.desktop > \
+ $PKG/usr/share/applications/quba.desktop
+
+cp -a squashfs-root/usr/share/icons \
+ $PKG/usr/share
+
+chmod -R 755 $PKG/usr/share
+
+cp Quba-$version.AppImage \
+ $PKG/usr/bin/
+ln -sv  Quba-$version.AppImage \
+ $PKG/usr/bin/quba
+}
+
