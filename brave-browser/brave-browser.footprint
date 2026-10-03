@@ -96,13 +96,6 @@ drwxr-xr-x	root/root	opt/brave.com/brave/locales/
 -rw-r--r--	root/root	opt/brave.com/brave/locales/vi.pak
 -rw-r--r--	root/root	opt/brave.com/brave/locales/zh-CN.pak
 -rw-r--r--	root/root	opt/brave.com/brave/locales/zh-TW.pak
--rw-r--r--	root/root	opt/brave.com/brave/product_logo_128.png
--rw-r--r--	root/root	opt/brave.com/brave/product_logo_16.png
--rw-r--r--	root/root	opt/brave.com/brave/product_logo_24.png
--rw-r--r--	root/root	opt/brave.com/brave/product_logo_256.png
--rw-r--r--	root/root	opt/brave.com/brave/product_logo_32.png
--rw-r--r--	root/root	opt/brave.com/brave/product_logo_48.png
--rw-r--r--	root/root	opt/brave.com/brave/product_logo_64.png
 -rw-r--r--	root/root	opt/brave.com/brave/resources.pak
 drwxr-xr-x	root/root	opt/brave.com/brave/resources/
 drwxr-xr-x	root/root	opt/brave.com/brave/resources/brave_extension/
