@@ -7,8 +7,8 @@ packager="tnut <tnut@nutyx.org"
 contributors="Great-OS Team, Spiky"
 
 name=vivaldi
-version=8.2.4133.80
-release=2
+version=8.2.4133.83
+release=1
 
 PKGMK_KEEP_SOURCES="no"
 
@@ -27,5 +27,6 @@ package() {
      size="$(echo ${icon} | sed 's/[^0-9]//g')"
      install -m644 -D $PKG/opt/vivaldi/$icon \
      $PKG/usr/share/icons/hicolor/"${size}x${size}"/apps/vivaldi.png
+     rm $PKG/opt/vivaldi/$icon
   done
 }

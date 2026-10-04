@@ -294,13 +294,6 @@ drwxr-xr-x	root/root	opt/vivaldi/locales/
 -rw-r--r--	root/root	opt/vivaldi/locales/zh-TW_FEMININE.pak
 -rw-r--r--	root/root	opt/vivaldi/locales/zh-TW_MASCULINE.pak
 -rw-r--r--	root/root	opt/vivaldi/locales/zh-TW_NEUTER.pak
--rw-r--r--	root/root	opt/vivaldi/product_logo_128.png
--rw-r--r--	root/root	opt/vivaldi/product_logo_16.png
--rw-r--r--	root/root	opt/vivaldi/product_logo_24.png
--rw-r--r--	root/root	opt/vivaldi/product_logo_256.png
--rw-r--r--	root/root	opt/vivaldi/product_logo_32.png
--rw-r--r--	root/root	opt/vivaldi/product_logo_48.png
--rw-r--r--	root/root	opt/vivaldi/product_logo_64.png
 -rw-r--r--	root/root	opt/vivaldi/resources.pak
 drwxr-xr-x	root/root	opt/vivaldi/resources/
 drwxr-xr-x	root/root	opt/vivaldi/resources/accessibility/
@@ -517,7 +510,7 @@ drwxr-xr-x	root/root	opt/vivaldi/resources/vivaldi/adblocker_resources/
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/adblocker_resources/redirectable_resources.json
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/background-bundle.js
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/background-common-bundle.js
--rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/background-service-worker-2beeb6fda445ef5ea6a13fdba3f918bf.js
+-rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/background-service-worker-c077d4f650323a17fe79abd8c2acd481.js
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/bundle-mailreader-worker.js
 -rw-r--r--	root/root	opt/vivaldi/resources/vivaldi/bundle.js
 drwxr-xr-x	root/root	opt/vivaldi/resources/vivaldi/components/
