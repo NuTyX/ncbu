@@ -1,0 +1,30 @@
+description='Schematic Editor supports everything from the most basic schematic to a complex hierarchical design.'
+url="https://www.kicad.org/"
+
+license="GPL-3.0"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=kicad
+version=10.0.6
+
+run=(gtk-update-icon-cache hicolor-icon-theme desktop-file-utils shared-mime-info)
+
+source=(https://kicad-downloads.s3.cern.ch/appimage/stable/$name-$version-x86_64.AppImage.tar)
+
+build() {
+
+./$name-$version-x86_64.AppImage --appimage-extract
+
+mkdir -p $PKG/usr/{share/applications,bin}
+sed "s@Categories=Science@Categories=Graphics;Science@"  squashfs-root/org.kicad.kicad.desktop \
+> $PKG/usr/share/applications/org.kicad.kicad.desktop
+cp -a squashfs-root/usr/share/icons \
+ $PKG/usr/share
+
+cp $name-$version-x86_64.AppImage \
+ $PKG/usr/bin/
+ln -sv $name-$version-x86_64.AppImage \
+ $PKG/usr/bin/kicad
+}
