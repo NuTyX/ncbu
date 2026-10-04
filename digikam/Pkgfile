@@ -1,0 +1,36 @@
+description='Professional Photo Management with the Power of Open Source.'
+url="https://www.digikam.org/"
+
+license="GPL-3.0"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=digikam
+version=9.1.0
+
+run=(gtk-update-icon-cache hicolor-icon-theme desktop-file-utils shared-mime-info)
+
+source=(https://mirror.gofoss.xyz/kde-ftp/stable/$name/$version/digiKam-$version-Qt6-x86-64.appimage)
+
+build() {
+
+chmod +x digiKam-$version-Qt6-x86-64.appimage
+
+./digiKam-$version-Qt6-x86-64.appimage --appimage-extract
+
+mkdir -p $PKG/usr/{share/{mime,applications},bin}
+cp -a squashfs-root/org.kde.digikam.desktop \
+ $PKG/usr/share/applications
+cp -a squashfs-root/org.kde.showfoto.desktop \
+ $PKG/usr/share/applications
+cp -a squashfs-root/usr/share/icons \
+ $PKG/usr/share
+
+cp digiKam-$version-Qt6-x86-64.appimage \
+ $PKG/usr/bin/
+ln -sv digiKam-$version-Qt6-x86-64.appimage \
+ $PKG/usr/bin/digikam
+ln -sv digiKam-$version-Qt6-x86-64.appimage \
+ $PKG/usr/bin/showfoto
+}
