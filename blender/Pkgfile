@@ -1,0 +1,32 @@
+description='3D computer graphics software suite used for modeling, animation, rendering, and visual effects.'
+url='https://www.blender.org'
+
+license="GPU-GPL 3.0 or later"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=blender
+version=5.2.2
+
+run=(gtk-update-icon-cache hicolor-icon-theme desktop-file-utils shared-mime-info)
+
+source=(https://mirror.$name.org/release/Blender${version:0:3}/$name-$version-linux-x64.tar.xz)
+
+build() {
+  cd $name-$version-linux-x64
+  mkdir -p $PKG/usr/{lib/$name,share/{doc/$name,licenses,applications,icons/hicolor/scalable/apps},bin}
+  ln -sv /usr/lib/$name/$name $PKG/usr/bin/$name
+  cp blender.desktop        $PKG/usr/share/applications
+  cp blender.svg $PKG/usr/share/icons/hicolor/scalable/apps
+  cp blender-symbolic.svg $PKG/usr/share/icons/hicolor/scalable/apps
+  cp readme.html $PKG/usr/share/doc/$name
+  cp -a license/ $PKG/usr/share/licenses/$name
+  cp -a lib $PKG/usr/lib/$name
+  cp -a 5.2 $PKG/usr/lib/$name
+  cp blender                $PKG/usr/lib/$name
+  cp blender-launcher       $PKG/usr/lib/$name
+  cp blender-system-info.sh $PKG/usr/lib/$name
+  cp blender-thumbnailer    $PKG/usr/lib/$name
+ 
+}
