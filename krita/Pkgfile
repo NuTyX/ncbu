@@ -1,0 +1,29 @@
+description='Open source painting program. It is made by artists that want to see affordable art tools for everyone.'
+url="https://www.krita.org/"
+
+license="GPL-3.0"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=krita
+version=5.3.4
+
+run=(gtk-update-icon-cache hicolor-icon-theme desktop-file-utils shared-mime-info)
+
+source=(https://download.kde.org/$name/$version/$name-$version-x86_64.AppImage)
+
+build() {
+
+./$name-$version-x86_64.AppImage --appimage-extract
+
+mkdir -p $PKG/usr/{share/applications,bin}
+cp -a squashfs-root/usr/share/icons \
+ $PKG/usr/share
+cp -a squashfs-root/org.kde.krita.desktop \
+ $PKG/usr/share/applications
+cp $name-$version-x86_64.AppImage \
+ $PKG/usr/bin/
+ln -sv $name-$version-x86_64.AppImage \
+ $PKG/usr/bin/krita
+}
