@@ -10,7 +10,7 @@ name=vscode
 version=1.141.0
 
 source=(https://download.visualstudio.com/stable/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/code_${version}-1791276758_amd64.deb)
-                                                 d0ff4f7702957d897d2e06956f8d42a08250c5df8339de3bec8190e56f726277
+sha256sum="d0ff4f7702957d897d2e06956f8d42a08250c5df8339de3bec8190e56f726277"
 package() {
    mkdir -p $PKG/usr/bin
    ln -sv /usr/share/code/bin/code $PKG/usr/bin/code
