@@ -22,7 +22,6 @@ drwxr-xr-x	root/root	opt/brave.com/brave/apparmor.d/
 -rwxr-xr-x	root/root	opt/brave.com/brave/chrome_crashpad_handler
 -rw-r--r--	root/root	opt/brave.com/brave/default-app-block
 -rw-r--r--	root/root	opt/brave.com/brave/icudtl.dat
--rw-r--r--	root/root	opt/brave.com/brave/libffmpeg.so
 -rwxr-xr-x	root/root	opt/brave.com/brave/libqt5_shim.so
 -rwxr-xr-x	root/root	opt/brave.com/brave/libqt6_shim.so
 -rwxr-xr-x	root/root	opt/brave.com/brave/libvk_swiftshader.so
