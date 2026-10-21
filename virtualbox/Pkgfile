@@ -7,11 +7,11 @@ contributors="Greg,Spiky"
 license="GPL, CDDL"
 
 name=virtualbox
-version=7.2.20
+version=7.2.22
 
 run=(qtbase desktop-file-utils)
 
-buildr=175154
+buildr=175245
 
 _name=Oracle_VirtualBox_Extension_Pack
 
