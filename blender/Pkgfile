@@ -7,7 +7,7 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 name=blender
-version=5.2.2
+version=5.2.3
 
 run=(gtk-update-icon-cache hicolor-icon-theme desktop-file-utils shared-mime-info)
 
