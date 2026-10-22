@@ -8,6 +8,7 @@ contributors="Spiky"
 
 name=qbittorrent
 version=5.3.0
+release=2
 
 run=(gtk-update-icon-cache hicolor-icon-theme desktop-file-utils shared-mime-info)
 
@@ -28,4 +29,8 @@ cp $name-${version}_x86_64.AppImage \
  $PKG/usr/bin/
 ln -sv $name-${version}_x86_64.AppImage \
  $PKG/usr/bin/$name
+
+find $PKG -type d -exec chmod 755 {} \;
+find $PKG -type f -exec chmod 644 {} \;
+chmod 755 $PKG/usr/bin/*
 }
