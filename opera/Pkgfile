@@ -5,7 +5,7 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Great-OS, Spiky"
  
 name=opera
-version=138.0.6044.24
+version=139.0.6053.22
 
 run=(gtk3 alsa-lib libnotify curl nss cups xorg-libxscrnsaver
      desktop-file-utils shared-mime-info hicolor-icon-theme
