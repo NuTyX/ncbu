@@ -1,12 +1,11 @@
 description="An easy-to-use, multi-track audio editor and recorder."
 url="https://www.audacityteam.org"
 
-packager="tnut <tnut@nutyx.org"
+packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 name=audacity
-version=4.0.1
-release=1
+version=4.0.2
 makedepends=(sed)
 run=(gtk-update-icon-cache hicolor-icon-theme desktop-file-utils shared-mime-info)
 
