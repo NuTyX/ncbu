@@ -21,8 +21,8 @@ chmod +x ElixirOffice-${version}-x86_64.AppImage
 mkdir -p $PKG/usr/{share/applications,bin}
 cp -a squashfs-root/usr/share/icons \
  $PKG/usr/share/icons
-cp -a squashfs-root/org.elixiroffice.desktop.desktop \
- $PKG/usr/share/applications
+sed "s@AppRun@ElixirOffice@g" squashfs-root/org.elixiroffice.desktop.desktop \
+ > $PKG/usr/share/applications/org.elixiroffice.desktop.desktop
 cp ElixirOffice-${version}-x86_64.AppImage \
  $PKG/usr/bin/
 ln -sv ElixirOffice-${version}-x86_64.AppImage \
