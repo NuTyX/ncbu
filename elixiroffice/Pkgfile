@@ -1,0 +1,34 @@
+description='Open Source Office suite for users used to MS Office.'
+url="https://github.com/leag1234/ElixirOffice/"
+
+license="AGPL-3.0 license"
+
+packager="tnut <tnut@nutyx.org>"
+contributors="Spiky"
+
+name=elixiroffice
+version=0.6.3
+release=1
+
+run=(gtk-update-icon-cache hicolor-icon-theme desktop-file-utils shared-mime-info)
+
+source=(https://github.com/leag1234/ElixirOffice/releases/download/v$version/ElixirOffice-${version}-x86_64.AppImage)
+
+build() {
+chmod +x ElixirOffice-${version}-x86_64.AppImage
+./ElixirOffice-${version}-x86_64.AppImage --appimage-extract
+
+mkdir -p $PKG/usr/{share/applications,bin}
+cp -a squashfs-root/usr/share/icons \
+ $PKG/usr/share/icons
+cp -a squashfs-root/org.elixiroffice.desktop.desktop \
+ $PKG/usr/share/applications
+cp ElixirOffice-${version}-x86_64.AppImage \
+ $PKG/usr/bin/
+ln -sv ElixirOffice-${version}-x86_64.AppImage \
+ $PKG/usr/bin/ElixirOffice
+
+find $PKG -type d -exec chmod 755 {} \;
+find $PKG -type f -exec chmod 644 {} \;
+chmod 755 $PKG/usr/bin/*
+}
