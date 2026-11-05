@@ -2,15 +2,15 @@ description='NVidia libraries'
 url='https://www.nvidia.com/en-us/drivers/unix/'
 
 packager="tnut <tnut@nutyx.org>"
-contributors="Llamatron"
+contributors="Llamatron, Spiky"
 
 license="custom"
 
 run=(libglvnd)
-conflicts=(nvidia-390 nvidia-470)
+conflicts=(nvidia-580)
 
 name=nvidia
-version=615.78.08
+version=620.70.06
 
 PKGMK_IGNORE_RUNTIMELIBS="yes"
 PKGMK_GROUPS=(man doc)
