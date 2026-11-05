@@ -9,7 +9,7 @@ run=(make-ca
      desktop-file-utils shared-mime-info)
 
 name=freetube
-version=0.25.3
+version=0.26.0
 
 PKGMK_IGNORE_RUNTIMELIBS="yes"
 PKGMK_KEEP_SOURCES="no"
