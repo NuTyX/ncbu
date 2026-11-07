@@ -5,8 +5,7 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 name=calibre
-version=9.15.0
-release=1
+version=9.18.0
 
 makedepends=(bash-completion xdg-utils tzdata)
 run=(libglvnd xorg-fontconfig libxkbcommon xorg-libxcomposite
