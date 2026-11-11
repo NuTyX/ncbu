@@ -7,8 +7,7 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Spiky"
 
 name=elixiroffice
-version=0.6.3
-release=1
+version=0.7.2
 
 run=(gtk-update-icon-cache hicolor-icon-theme desktop-file-utils shared-mime-info)
 
