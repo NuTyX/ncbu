@@ -7,7 +7,7 @@ packager="tnut <tnut@nutyx.org>"
 maintainer="Great-OS Team, Spiky"
 
 name=chrome
-version=153.0.8010.52
+version=157.0.8103.50
 
 
 run=(alsa-lib gtk3 cups xorg-libxscrnsaver xorg-libxtst nss)
