@@ -1,5 +1,8 @@
 drwxr-xr-x	root/root	usr/share/doc/
+lrwxrwxrwx	root/root	usr/share/doc/nvidia-utils -> nvidia
 drwxr-xr-x	root/root	usr/share/doc/nvidia/
+-rw-r--r--	root/root	usr/share/doc/nvidia/NVIDIA_Changelog
+-rw-r--r--	root/root	usr/share/doc/nvidia/README
 drwxr-xr-x	root/root	usr/share/doc/nvidia/html/
 -rw-r--r--	root/root	usr/share/doc/nvidia/html/acknowledgements.html
 -rw-r--r--	root/root	usr/share/doc/nvidia/html/addressingcapabilities.html
